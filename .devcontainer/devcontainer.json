@@ -20,6 +20,9 @@
 			"settings": {
 			},
 			"extensions": [
+				"ms-vscode.cpptools",             // common C/C++ intellisense
+				"mhutchie.git-graph",             // git graph support
+				"ms-vscode.vscode-serial-monitor" // integrated serial monitor
 			]
 		}
 	},

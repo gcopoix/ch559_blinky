@@ -1,0 +1,28 @@
+{
+	// See https://code.visualstudio.com/docs/debugtest/debugging-configuration
+	// for the documentation about the launch.json format
+	// https://code.visualstudio.com/docs/editor/variables-reference
+
+	"version": "0.2.0",
+	"configurations": [
+		{
+			// dummy launch configuration just to flash firmware (see preLaunchTask)
+			// will present an error message after flashing that debugging can't be started (which is correct for this device)
+			"name": "flash",
+			"cwd": "${workspaceFolder}",
+			"request": "launch",
+			"type": "cppdbg",
+			"program": "${workspaceRoot}/build/main.bin",
+			"miDebuggerPath": "/bin/false",
+			"MIMode": "gdb",
+			"debugServerPath": "/bin/false",
+			"serverLaunchTimeout": 500,
+			"preLaunchTask": "flash",	
+		},
+	],
+	"inputs": [
+		{
+
+		}
+	]
+}

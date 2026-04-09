@@ -2,6 +2,7 @@
 	// See https://code.visualstudio.com/docs/debugtest/tasks
 	// for the documentation about the tasks.json format
 	// https://code.visualstudio.com/docs/editor/variables-reference
+
 	"version": "2.0.0",
 	"tasks": [
 		{

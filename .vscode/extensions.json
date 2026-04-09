@@ -1,11 +1,10 @@
 {
 	// See https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_workspace-recommended-extensions
 	// for the documentation about the extensions.json format
+	// https://code.visualstudio.com/docs/editor/variables-reference
 
 	"recommendations": [
-		"ms-azuretools.vscode-docker",        // Docker support
 		"ms-vscode-remote.remote-containers", // remote/devcontainer support
-		"ms-vscode-remote.remote-ssh",        // remote machine SSH support
 		"ms-vscode.cpptools",                 // common C/C++ intellisense
 		"mhutchie.git-graph",                 // git graph support
 		"ms-vscode.vscode-serial-monitor"     // integrated serial monitor

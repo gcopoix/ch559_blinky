@@ -4,6 +4,6 @@
 	// https://code.visualstudio.com/docs/editor/variables-reference
 
 	// SDCC include directories and defines for intellisense
-	"C_Cpp.default.includePath": [ "/usr/share/sdcc/include/**", "inc/**" ],
-	"C_Cpp.default.defines": [ "SDCC", "__sfr=unsigned char", "__sbit=int", "__at(a)=" ]
+	"C_Cpp.default.includePath": [ "/usr/share/sdcc/include/**", "inc/**", "src/**" ],
+	"C_Cpp.default.defines": [ "SDCC", "__sfr=unsigned char", "__sfr16=unsigned short", "__sbit=int", "__at(a)=", "__xdata=", "__code=", "__data=", "__pdata=" ]
 }
