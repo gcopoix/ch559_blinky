@@ -1,0 +1,32 @@
+{
+	"name": "CH559",
+	"build": {
+		"context": "..",
+		"dockerfile": "Dockerfile",
+		"args": {
+		}
+	},
+
+	"runArgs": [
+		"--privileged",
+		"--device=/dev/bus/usb:/dev/bus/usb"
+	],
+	"mounts": [
+		"type=bind,source=/dev/bus/usb,target=/dev/bus/usb"
+	],
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"settings": {
+			},
+			"extensions": [
+			]
+		}
+	},
+	"initializeCommand": "",
+	"onCreateCommand": "",
+	"updateContentCommand": "",
+	"postCreateCommand": "",
+	"postStartCommand": "",
+	"postAttachCommand": "sudo service udev restart"
+}

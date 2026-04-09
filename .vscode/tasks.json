@@ -1,0 +1,37 @@
+{
+	// See https://code.visualstudio.com/docs/debugtest/tasks
+	// for the documentation about the tasks.json format
+	// https://code.visualstudio.com/docs/editor/variables-reference
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"command": "make",
+			"args": [ "all", "size" ],
+			"options": {
+				"cwd": "${workspaceFolder}",
+			},
+			"problemMatcher": [ "$gcc" ],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "flash",
+			"type": "shell",
+			"command": "make",
+			"args": [ "flash" ],
+			"options": {
+				"cwd": "${workspaceFolder}",
+			},
+			"problemMatcher": [ ],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"dependsOn": "build"
+		},
+	],
+}

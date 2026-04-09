@@ -1,0 +1,9 @@
+{
+	// See https://code.visualstudio.com/docs/configure/settings
+	// for the documentation about the settings.json format
+	// https://code.visualstudio.com/docs/editor/variables-reference
+
+	// SDCC include directories and defines for intellisense
+	"C_Cpp.default.includePath": [ "/usr/share/sdcc/include/**", "inc/**" ],
+	"C_Cpp.default.defines": [ "SDCC", "__sfr=unsigned char", "__sbit=int", "__at(a)=" ]
+}
